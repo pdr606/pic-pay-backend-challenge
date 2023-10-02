@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -18,5 +20,5 @@ public class Transfer {
     private Long payment;
     @Column(name = "reciving_id")
     private Long reciving;
-    private Double amount;
+    private BigDecimal amount;
 }
