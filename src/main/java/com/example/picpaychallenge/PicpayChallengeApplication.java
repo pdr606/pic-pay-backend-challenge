@@ -1,4 +1,5 @@
-ggpackage com.example.picpaychallenge;
+package com.example.picpaychallenge;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

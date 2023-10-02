@@ -5,9 +5,13 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Generated;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class User {
 
@@ -21,6 +25,8 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
+    private BigDecimal balance;
     @Enumerated(EnumType.STRING)
     private UserType userType;
+
 }
