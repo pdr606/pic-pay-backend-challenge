@@ -12,7 +12,7 @@ public class CheckBalanceUseCase {
         this.userGateway = userGateway;
     }
 
-    public boolean checkBalance(BigDecimal balance){
-        return userGateway.checkBalance(balance);
+    public boolean checkBalance(BigDecimal userBalance, BigDecimal transferBalance){
+        return userGateway.checkBalance(userBalance, transferBalance);
     }
 }

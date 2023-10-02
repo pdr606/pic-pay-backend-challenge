@@ -3,17 +3,15 @@ package com.example.picpaychallenge.application.usecases.user;
 import com.example.picpaychallenge.application.gateway.UserGateway;
 import com.example.picpaychallenge.model.entities.User;
 
-import java.math.BigDecimal;
-
-public class MakeTranferUseCase {
+public class FindByIdUseCase {
 
     private final UserGateway userGateway;
 
-    public MakeTranferUseCase(UserGateway userGateway) {
+    public FindByIdUseCase(UserGateway userGateway) {
         this.userGateway = userGateway;
     }
 
-    public String makeTranfer(Long paymentId, Long reciverId, BigDecimal value){
-        return userGateway.makeTranfer(paymentId, reciverId, value);
+    public User findById(Long id){
+        return userGateway.findById(id);
     }
 }
